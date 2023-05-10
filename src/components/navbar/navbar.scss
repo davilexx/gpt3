@@ -1,0 +1,22 @@
+@import '../../mixins';
+
+.gpt3 {
+  &__navbar {
+    @include flex(row, space-between, center);
+    padding: 2rem 6rem;
+  }
+
+  &__navbar-links {
+    flex: 1;
+    @include flex(row, flex-start, center);
+
+    &_logo {
+      margin-right: 2rem;
+
+      img {
+        width: 62.56px;
+        height: 16.02px;
+      }
+    }
+  }
+}
