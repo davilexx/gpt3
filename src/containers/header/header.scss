@@ -1,0 +1,93 @@
+@import '../../mixins';
+@import '../../index.scss';
+
+.header {
+  font-family: $font-manrope;
+
+  &__container {
+    @include flex(row, space-between, center);
+    @include container();
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    background: $gradient-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #81afdd;
+  }
+
+  &__input {
+    input {
+      all: unset;
+      width: 456px;
+      height: 73px;
+      background: #052d56;
+      border-radius: 5px 0px 0px 5px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      padding: 0 1.5rem;
+      margin: 2rem 0;
+      color: #fff;
+
+      &::placeholder {
+        color: #3d6184;
+      }
+    }
+
+    button {
+      all: unset;
+      width: 174px;
+      height: 73px;
+      background: #ff4820;
+      border-radius: 0px 5px 5px 0px;
+      @include flex(row, center, center);
+      display: inline-flex;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  &__people {
+    @include flex(row, flex-start, center);
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 38px;
+      color: #ffffff;
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
