@@ -1,0 +1,23 @@
+@import '../../mixins';
+@import '../../index.scss';
+
+.brand {
+  margin-top: 5rem;
+
+  &__container {
+    @include container();
+    @include flex(row, center, center);
+
+    @media screen and (max-width: 860px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    margin: 0 1.5rem;
+
+    @media screen and (max-width: 860px) {
+      margin: 1.5rem 0;
+    }
+  }
+}
