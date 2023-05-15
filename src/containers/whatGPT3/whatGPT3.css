@@ -1,1 +1,66 @@
-/*# sourceMappingURL=whatGPT3.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.wgpt3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  margin-top: 10rem;
+}
+.wgpt3__container {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  background: var(--color-footer);
+  /* ff 3.6+ */
+  /* safari 5.1+,chrome 10+ */
+  /* opera 11.10+ */
+  /* ie 10+ */
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 30% -100%, #042c54 25%, rgb(4, 44, 84) 85%, rgb(27, 120, 222) 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.wgpt3__first-feature .feature__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.wgpt3__first-feature .feature__description {
+  width: 62%;
+}
+.wgpt3__headline {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wgpt3__title {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  width: 40%;
+  margin: 5rem 0 7rem;
+}
+.wgpt3__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ff8a71;
+}
+.wgpt3__features {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wgpt3__features .feature {
+  width: 30%;
+  height: 193px;
+}/*# sourceMappingURL=whatGPT3.css.map */

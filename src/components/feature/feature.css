@@ -1,1 +1,21 @@
-/*# sourceMappingURL=feature.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.feature__gradient {
+  width: 38px;
+  height: 3px;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+}
+.feature__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.feature__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #81afdd;
+}/*# sourceMappingURL=feature.css.map */
