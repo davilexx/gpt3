@@ -7,6 +7,10 @@
   &__container {
     @include flex(row, space-between, center);
     @include container();
+
+    @media screen and (max-width: 1322px) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -19,6 +23,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    @media screen and (max-width: 1430px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      line-height: 3.5rem;
+    }
   }
 
   &__description {
@@ -30,6 +42,14 @@
   }
 
   &__input {
+    @media screen and (max-width: 1322px) {
+      @include flex(row, center, center);
+    }
+
+    @media screen and (max-width: 550px) {
+      flex-wrap: wrap;
+    }
+
     input {
       all: unset;
       width: 456px;
@@ -43,6 +63,17 @@
       padding: 0 1.5rem;
       margin: 2rem 0;
       color: #fff;
+
+      @media screen and (max-width: 1322px) {
+        width: 70%;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+      }
 
       &::placeholder {
         color: #3d6184;
@@ -63,11 +94,32 @@
       line-height: 27px;
       color: #ffffff;
       cursor: pointer;
+
+      @media screen and (max-width: 1322px) {
+        width: 30%;
+      }
+
+      @media screen and (max-width: 700px) {
+        padding: 0 2rem;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 1rem;
+        height: 3rem;
+        width: 100%;
+        border-radius: 5px;
+      }
     }
   }
 
   &__people {
     @include flex(row, flex-start, center);
+
+    @media screen and (max-width: 550px) {
+      @include flex(column, flex-start, flex-start);
+      margin-top: 2rem;
+    }
 
     p {
       font-style: normal;
@@ -76,18 +128,56 @@
       line-height: 38px;
       color: #ffffff;
       margin-left: 1.5rem;
+
+      @media screen and (max-width: 550px) {
+        margin: 0;
+      }
     }
   }
 
   &__left {
     width: 50%;
+
+    @media screen and (max-width: 1548px) {
+      width: 55%;
+    }
+
+    @media screen and (max-width: 1430px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 1322px) {
+      width: 100%;
+    }
   }
 
   &__right {
     width: 50%;
 
+    @media screen and (max-width: 1548px) {
+      width: 45%;
+    }
+
+    @media screen and (max-width: 1430px) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 1322px) {
+      width: 100%;
+      @include flex(row, center, center);
+      margin-top: 2rem;
+    }
+
     img {
       width: 100%;
+
+      @media screen and (max-width: 1322px) {
+        width: 60%;
+      }
+
+      @media screen and (max-width: 550px) {
+        width: 100%;
+      }
     }
   }
 }
