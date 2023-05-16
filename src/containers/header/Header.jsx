@@ -12,10 +12,12 @@ function Header() {
             Let’s Build Something amazing with GPT-3 OpenAI
           </h1>
           <p className="header__description">
-            Yet bed any for travelling assistance indulgence unpleasing. Not
-            thoughts all exercise blessing. Indulgence way everything joy
-            alteration boisterous the attachment. Party we years to order allow
-            asked of.
+            With GPT-3 by OpenAI, you can build a wide range of applications
+            including chatbots, virtual assistants, language translation tools,
+            content generators, personalized recommendation systems, and much
+            more. Its versatility and natural language processing capabilities
+            make it a powerful tool for creating intelligent and interactive
+            systems.
           </p>
           <div className="header__input">
             <input type="email" placeholder="Your Email Address" />

@@ -3,11 +3,11 @@
 
 .wgpt3 {
   @include flex(row, center, center);
+  @include container();
   font-family: $font-manrope;
   margin-top: 10rem;
 
   &__container {
-    width: 1170px;
     @include flex(column, flex-start, flex-start);
 
     padding: 2rem;
@@ -60,10 +60,18 @@
     .feature {
       &__container {
         @include flex(row, space-between, flex-start);
+
+        @media screen and (max-width: 1024px) {
+          flex-direction: column;
+        }
       }
 
       &__description {
         width: 62%;
+
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -71,6 +79,10 @@
   &__headline {
     width: 100%;
     @include flex(row, space-between, center);
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -79,6 +91,11 @@
     line-height: 45px;
     width: 40%;
     margin: 5rem 0 7rem;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
 
   &__description {
@@ -87,15 +104,27 @@
     font-size: 16px;
     line-height: 30px;
     color: #ff8a71;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__features {
     width: 100%;
-    @include flex(row, space-between, center);
+    @include flex(row, space-between, flex-start);
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
 
     .feature {
       width: 30%;
-      height: 193px;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-top: 3rem;
+      }
     }
   }
 }
