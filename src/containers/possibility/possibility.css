@@ -1,1 +1,101 @@
-/*# sourceMappingURL=possibility.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.possibility {
+  margin-top: 10rem;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+}
+.possibility__container {
+  padding: 0 6rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@media screen and (max-width: 700px) {
+  .possibility__container {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .possibility__container {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .possibility__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .possibility__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.possibility__left {
+  width: 40%;
+}
+@media screen and (max-width: 1200px) {
+  .possibility__left {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .possibility__left {
+    width: 100%;
+    order: 2;
+    margin-top: 3rem;
+  }
+}
+.possibility__right {
+  width: 45%;
+  margin-left: 2rem;
+}
+@media screen and (max-width: 1200px) {
+  .possibility__right {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .possibility__right {
+    width: 100%;
+    order: 1;
+  }
+}
+.possibility__img {
+  width: 100%;
+}
+.possibility__early-top {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #71e5ff;
+}
+.possibility__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+}
+.possibility__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #81afdd;
+}
+.possibility__early-bottom {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ff8a71;
+}/*# sourceMappingURL=possibility.css.map */

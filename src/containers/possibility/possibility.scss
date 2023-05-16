@@ -1,0 +1,85 @@
+@import '../../mixins';
+@import '../../index.scss';
+
+.possibility {
+  margin-top: 10rem;
+  font-family: $font-manrope;
+  color: #fff;
+
+  &__container {
+    @include container();
+    @include flex(row, flex-start, flex-end);
+
+    @media screen and (max-width: 1200px) {
+      @include flex(row, space-between, flex-end);
+    }
+
+    @media screen and (max-width: 1024px) {
+      @include flex(column, center, flex-start);
+    }
+  }
+
+  &__left {
+    width: 40%;
+
+    @media screen and (max-width: 1200px) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      order: 2;
+      margin-top: 3rem;
+    }
+  }
+
+  &__right {
+    width: 45%;
+    margin-left: 2rem;
+
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__early-top {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71e5ff;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #81afdd;
+  }
+
+  &__early-bottom {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ff8a71;
+  }
+}
