@@ -1,0 +1,106 @@
+@import '../../mixins';
+@import '../../index.scss';
+
+.footer {
+  background-color: #031b34;
+  color: #fff;
+  margin-top: 10rem;
+  font-family: $font-manrope;
+
+  &__container {
+    @include container();
+    @include flex(column, center, center);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    width: 60%;
+
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 42px;
+      line-height: 62px;
+    }
+  }
+
+  &__btn {
+    all: unset;
+    text-align: center;
+    width: 218px;
+    height: 65px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+  }
+
+  &__contacts {
+    margin: 10rem 0 5rem;
+    width: 100%;
+    @include flex(row, space-between, flex-start);
+
+    @media screen and (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin: 4rem 0 0 0;
+    }
+  }
+
+  &__location {
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+    @include flex(column, space-between, flex-start);
+
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin: 2rem 2rem 4rem;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    @media screen and (max-width: 700px) {
+      margin: 2rem;
+    }
+  }
+
+  li {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 2rem 0;
+  }
+
+  h5 {
+    font-size: 22px;
+    margin-top: 0;
+
+    @media screen and (max-width: 700px) {
+      margin: 2rem;
+    }
+  }
+
+  &__copyright {
+    @media screen and (max-width: 700px) {
+      margin-top: 4rem;
+    }
+  }
+}

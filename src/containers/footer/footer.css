@@ -1,1 +1,122 @@
-/*# sourceMappingURL=footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.footer {
+  background-color: #031b34;
+  color: #fff;
+  margin-top: 10rem;
+  font-family: "Manrope", sans-serif;
+}
+.footer__container {
+  padding: 0 6rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .footer__container {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer__container {
+    padding: 0 2rem;
+  }
+}
+.footer__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  width: 60%;
+}
+@media screen and (max-width: 1000px) {
+  .footer__title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__title {
+    font-size: 42px;
+    line-height: 62px;
+  }
+}
+.footer__btn {
+  all: unset;
+  text-align: center;
+  width: 218px;
+  height: 65px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+.footer__contacts {
+  margin: 10rem 0 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .footer__contacts {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__contacts {
+    margin: 4rem 0 0 0;
+  }
+}
+.footer__location {
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .footer__location {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__location {
+    margin: 2rem 2rem 4rem;
+  }
+}
+.footer__location img {
+  margin-bottom: 2rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+@media screen and (max-width: 700px) {
+  .footer ul {
+    margin: 2rem;
+  }
+}
+.footer li {
+  font-size: 15px;
+  line-height: 22px;
+  margin: 2rem 0;
+}
+.footer h5 {
+  font-size: 22px;
+  margin-top: 0;
+}
+@media screen and (max-width: 700px) {
+  .footer h5 {
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__copyright {
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=footer.css.map */
