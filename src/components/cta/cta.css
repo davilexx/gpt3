@@ -1,1 +1,83 @@
-/*# sourceMappingURL=cta.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.cta {
+  font-family: "Manrope", sans-serif;
+  margin-top: 10rem;
+}
+.cta__container {
+  padding: 0 6rem;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 700px) {
+  .cta__container {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .cta__container {
+    padding: 0 2rem;
+  }
+}
+.cta__wrapper {
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10.7236px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .cta__wrapper {
+    flex-direction: column;
+  }
+}
+.cta__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #0e0e0e;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 450px) {
+  .cta__description {
+    line-height: 22px;
+  }
+}
+.cta__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 45px;
+  color: #000000;
+  margin-top: 0;
+}
+@media screen and (max-width: 450px) {
+  .cta__title {
+    line-height: 35px;
+    margin-top: 1rem;
+  }
+}
+.cta__btn {
+  all: unset;
+  width: 189.14px;
+  height: 59.4px;
+  background: #000000;
+  font-style: normal;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .cta__btn {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=cta.css.map */
