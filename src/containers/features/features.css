@@ -1,1 +1,101 @@
-/*# sourceMappingURL=features.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.features {
+  font-family: "Manrope", sans-serif;
+  margin-top: 10rem;
+}
+.features__container {
+  padding: 0 6rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 700px) {
+  .features__container {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .features__container {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .features__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.features__left {
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .features__left {
+    width: 100%;
+  }
+}
+.features__right {
+  width: 60%;
+  margin-top: 2.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .features__right {
+    width: 100%;
+  }
+}
+.features__right .feature__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 550px) {
+  .features__right .feature__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.features__right .feature__top {
+  width: 28%;
+}
+@media screen and (max-width: 550px) {
+  .features__right .feature__top {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+.features__right .feature__title {
+  line-height: 40px;
+}
+@media screen and (max-width: 550px) {
+  .features__right .feature__title {
+    margin-bottom: 0;
+  }
+}
+.features__right .feature__description {
+  margin-top: 1.8rem;
+  width: 60%;
+}
+@media screen and (max-width: 550px) {
+  .features__right .feature__description {
+    width: 100%;
+  }
+}
+.features__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+}
+.features__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ff8a71;
+}/*# sourceMappingURL=features.css.map */

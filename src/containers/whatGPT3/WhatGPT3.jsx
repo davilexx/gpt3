@@ -29,7 +29,7 @@ function WhatGPT3() {
           />
           <Feature
             title="Education"
-            text="GPT-3 can be a valuable tool in the field of education. It can assist with tasks such as language translation, text summarization, essay writing assistance, question answering, and providing explanations on various subjects. GPT-3 can also be used to create interactive educational materials, virtual tutors, and personalized learning experiences. It has the potential to enhance educational resources, facilitate access to information, and support students and educators in their learning journeys. However, it is important to note that GPT-3 is a language model and should not be considered a substitute for human teachers or personalized instruction."
+            text="GPT-3 can be a valuable tool in the field of education. It can assist with tasks such as language translation, text summarization, essay writing assistance, question answering, and providing explanations on various subjects. GPT-3 can also be used to create interactive educational materials, virtual tutors, and personalized learning experiences. It has the potential to enhance educational resources, facilitate access to information, and support students and educators in their learning journeys."
           />
         </div>
       </div>

@@ -1,0 +1,84 @@
+@import '../../mixins';
+@import '../../index.scss';
+
+.features {
+  font-family: $font-manrope;
+  margin-top: 10rem;
+
+  &__container {
+    @include container();
+    @include flex(row, space-between, flex-start);
+
+    @media screen and (max-width: 1024px) {
+      @include flex(column, center, flex-start);
+    }
+  }
+
+  &__left {
+    width: 30%;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    width: 60%;
+    margin-top: 2.5rem;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
+    .feature {
+      &__container {
+        @include flex(row, space-between, flex-start);
+
+        @media screen and (max-width: 550px) {
+          @include flex(column, center, flex-start);
+        }
+      }
+
+      &__top {
+        width: 28%;
+
+        @media screen and (max-width: 550px) {
+          width: 100%;
+          margin-top: 2rem;
+        }
+      }
+
+      &__title {
+        line-height: 40px;
+
+        @media screen and (max-width: 550px) {
+          margin-bottom: 0;
+        }
+      }
+
+      &__description {
+        margin-top: 1.8rem;
+        width: 60%;
+
+        @media screen and (max-width: 550px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ff8a71;
+  }
+}
