@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <h2 className="footer__title gradient__text">
-          Do you want to step in to the future before others?
+          Do you want to step into the future before others?
         </h2>
         <button className="footer__btn">Request Early Access</button>
         <div className="footer__contacts">

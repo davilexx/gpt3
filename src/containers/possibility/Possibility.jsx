@@ -4,7 +4,7 @@ import possibility from '../../assets/img/possibility.png';
 
 function Possibility() {
   return (
-    <section className="possibility">
+    <section className="possibility" id="possibility">
       <div className="possibility__container">
         <div className="possibility__left">
           <img

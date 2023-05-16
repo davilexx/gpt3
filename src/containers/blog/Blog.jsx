@@ -5,7 +5,7 @@ import { blog01, blog02, blog03, blog04, blog05 } from './imports';
 
 function Blog() {
   return (
-    <section className="blog">
+    <section className="blog" id="blog">
       <div className="blog__container">
         <h2 className="blog__title gradient__text">
           A lot is happening,

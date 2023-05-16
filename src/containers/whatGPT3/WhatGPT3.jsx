@@ -4,7 +4,7 @@ import { Feature } from '../../components';
 
 function WhatGPT3() {
   return (
-    <section className="wgpt3">
+    <section className="wgpt3" id="wgpt3">
       <div className="wgpt3__container">
         <div className="wgpt3__first-feature">
           <Feature

@@ -1,6 +1,10 @@
 @import './normalize.css';
 @import './index.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $color-bg;
 }
